@@ -56,21 +56,37 @@
 
             /* Scale down headings */
             h1 {
-                font-size: 20px !important;
+                font-size: 24px !important;
+                line-height: 1.2 !important;
             }
 
             h2 {
-                font-size: 16px !important;
+                font-size: 18px !important;
+                line-height: 1.2 !important;
             }
 
-            /* Scale down body text */
+            /* Scale down body text with better legibility */
             p,
             span,
             a,
             strong {
-                font-size: 13px !important;
-                line-height: 1.4 !important;
+                font-size: 14px !important;
+                line-height: 1.5 !important;
                 font-family: "Sora", sans-serif;
+            }
+
+            /* Specific font size for secondary labels in Stats/Footer */
+            .mobile-small {
+                font-size: 12px !important;
+            }
+
+            /* Ensure Button remains a large tap target */
+            .mobile-btn {
+                padding: 14px 34px !important;
+                font-size: 16px !important;
+                width: 100% !important;
+                display: block !important;
+                box-sizing: border-box !important;
             }
 
             /* Reduce padding to give columns more space */
@@ -79,7 +95,7 @@
             }
 
             .header {
-                padding: 20px 15px !important;
+                padding: 15px 10px !important;
             }
 
             .content {
@@ -240,7 +256,7 @@
                                             style=" font-family: Sora, sans-serif; color: #FFFFFF; margin-top: 12px; margin-bottom: 0px; font-weight: 500; ">
                                             750+
                                         </h2>
-                                        <p
+                                        <p class="mobile-small"
                                             style="color:#D4DCD8; font-weight: 600; line-height: 100%; margin-bottom: 0; letter-spacing: 1%; font-size:14px; margin-top: 8px;">
                                             Happy Clients
                                         </p>
@@ -254,7 +270,7 @@
                                             style=" font-family: Sora, sans-serif; color: #FFFFFF; margin-top: 12px; margin-bottom: 0px; font-weight: 500;">
                                             24/7
                                         </h2>
-                                        <p
+                                        <p class="mobile-small"
                                             style="color:#D4DCD8; font-weight: 600; line-height: 100%; margin-bottom: 0; letter-spacing: 1%; font-size:14px; margin-top: 8px;">
                                             Access to Care
                                         </p>
@@ -267,7 +283,7 @@
                                             style=" font-family: Sora, sans-serif; color: #FFFFFF; margin-top: 12px; margin-bottom: 0px; font-weight: 500;">
                                             100+
                                         </h2>
-                                        <p
+                                        <p class="mobile-small"
                                             style="color:#D4DCD8; font-weight: 600; line-height: 100%; margin-bottom: 0; letter-spacing: 1%; font-size:14px; margin-top: 8px;">
                                             Professional Staff
                                         </p>
@@ -302,7 +318,7 @@
                                 </p>
 
                                 <a href="#" style="text-decoration:none;">
-                                    <strong
+                                    <strong class="mobile-btn"
                                         style="background:#efef30; color:#335347; padding:12px 28px; border-radius:8px; line-height: 100%; font-size:14px; font-weight:500; display:inline-block;">
                                         Talk Today
                                     </strong>
