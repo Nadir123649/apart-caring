@@ -1,57 +1,54 @@
-# Noah's Dove - Email Template Collection
+# Noah's Dove - Premium Lead-Nurturing Email Suite
 
-A collection of three professional, high-end email templates designed for **Noah's Dove LLC**. These templates are built to be responsive, accessible, and compatible with all major email clients.
+A professional collection of 6 high-end, responsive email templates designed for **Noah's Dove Home Care**. This suite is built for a complete lead-nurturing drip campaign, focusing on education, trust-building, and caregiver support.
 
-## 📁 Project Overview
-The collection includes three distinct design "versions" to provide variety in presentation styles:
+## 📁 Campaign Structure
+The suite consists of six strategically designed templates, each serving a specific stage in the family's journey:
 
-### 1️⃣ Version 1: The Corporate/Data-Driven (`index.html`)
-*   **Theme**: Building trust and authority through social proof.
-*   **Features**: 
-    - 3-column stats grid (Happy Clients, Access, Staff).
-    - Detailed logo header and extensive footer.
-    - Professional green-on-cream aesthetic.
-*   **Best For**: Welcome emails, monthly reports, or brand introduction.
+1.  **Welcome Template (`welcome-template.html`)**
+    *   **Goal**: Introduction and primary value proposition.
+    *   **Key Features**: "What you can expect" process list and initial support call-to-action.
 
-### 2️⃣ Version 2: The Minimalist/Direct (`second.html`)
-*   **Theme**: Modern, clean, and distraction-free.
-*   **Features**: 
-    - High use of white space for readability.
-    - Numbered list-based service section.
-    - "Direct Action" CTA block with a minimalist header.
-*   **Best For**: Quick service announcements or follow-ups.
+2.  **Our Difference (`different-care.html`)**
+    *   **Goal**: Highlighting unique competitive advantages.
+    *   **Key Features**: Montessori-inspired engagement focus and specialized memory care highlights.
 
-### 3️⃣ Version 3: The Editorial/Lifestyle (`third.html`)
-*   **Theme**: Warmth and emotional connection.
-*   **Features**: 
-    - Full-width lifestyle hero image.
-    - Modern "Card-style" layout (shadow & rounded corners).
-    - 3-step process visualization for new families.
-    - Featured quote/testimonial block with specialized styling.
-*   **Best For**: Onboarding new clients or emotional storytelling.
+3.  **Signs for Care (`time-for-care.html`)**
+    *   **Goal**: Education and early intervention.
+    *   **Key Features**: "5 Signs" checklist with high-readability item boxes and numbered indicators.
+
+4.  **Caregiving Is Hard (`caregiving-hard.html`)**
+    *   **Goal**: Empathy and resource sharing.
+    *   **Key Features**: Featured callout for caregiver stress and specialized meal planning services.
+
+5.  **Family Stories (`families-saying.html`)**
+    *   **Goal**: Social proof and trust-building.
+    *   **Key Features**: Glassmorphism-style testimonial component and direct "Read More Stories" CTA.
+
+6.  **Still Thinking? (`still-thinking.html`)**
+    *   **Goal**: Long-term follow-up (30-day touchpoint).
+    *   **Key Features**: Low-pressure "Checking-in" layout with quick resources for licensing and regulations.
 
 ---
 
-## 🎨 Branding Guidelines
+## 🛠 Technical Excellence
+These templates are engineered for production-ready performance across the modern and legacy email landscape:
+
+*   **Mailchimp Ready**: Integrated `mc:edit` tags on all headers, body copies, images, and items. Safe for non-technical users to manage directly in the Mailchimp editor.
+*   **Outlook Optimized**: Utilizes **VML (Vector Markup Language)** for pixel-perfect button rendering and "Ghost Tables" for layout stability in desktop Outlook.
+*   **Responsive Architecture**: Fluid 600px grid system with mobile-specific overrides for typography and spacing.
 *   **Typography**:
-    - **Headings**: `Libre Baskerville` (Classic & Trustworthy)
-    - **Body Text**: `Sora` (Modern & Accessible)
-*   **Primary Palette**: 
-    - Deep Forest Green: `#183c30`
-    - Dark Background Green: `#294e3a`
-    - Accent Green: `#62a958`
-    - Highlight Action Yellow: `#efef30`
+    *   **Headings**: `Libre Baskerville` (Serif) for authority and warmth.
+    *   **Body**: `Sora` (Sans-Serif) for accessibility and modern readability.
+*   **Brand Identity**: Consistent use of `#183C30` (Primary Green) and `#75A541` (Action Green).
 
 ---
 
-## 🛠 Technical Implementation & Compatibility
-To ensure these templates work correctly on **Gmail, Outlook, Apple Mail, and Mobile**, the following techniques were used:
-
-1.  **Table-Driven Layout**: Uses nested tables for 99.9% layout compatibility.
-2.  **Inline Styling**: Critical CSS is applied directly to elements for consistent rendering.
-3.  **MSO Fixes**: Includes Microsoft Outlook conditional tags for proper container widths and font fallbacks.
-4.  **Responsive Design**: Media queries ensure a fluid layout on mobile devices (600px Max-Width).
-5.  **Accessibility**: All images include descriptive `alt` tags and semantic HTML titles.
+## 📍 Branding & Contact Info
+*   **Headquarters**: 3050 Beacon Blvd, Suite 200, West Sacramento, CA 95691
+*   **Phone**: 916-237-8000
+*   **License**: HCO License 574700019
+*   **Design System**: 8px and 12px border radii for content blocks; 50px pill-style buttons.
 
 ---
-© 2026 Noah's Dove LLC. | Sacramento, CA.
+© 2026 Noah's Dove LLC. All Copyrights Reserved.
