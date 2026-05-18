@@ -57,7 +57,7 @@ A professional collection of 6 high-end, responsive email templates custom-desig
 - **Website**: [apartnerincaring.com](https://apartnerincaring.com/)
 - **Headquarters**: 68 Coombs St. A-9, Napa, California, 94559
 - **Phone**: (707) 252-7569
-- **License**: HCO License 574700019
+- **License**: HCO License 284700018
 - **Service Areas**: Napa, Yountville, St. Helena, Calistoga, Santa Rosa, Benicia, Vallejo, Fairfield, Green Valley, CA
 
 ---
