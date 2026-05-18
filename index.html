@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Sora:wght@100..800&display=swap"
-        rel="stylesheet">
-
-    <title>Welcome Email</title>
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>Noah's Dove - Welcome Template</title>
     <style>
-        body {
+        @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;700&family=Roboto:wght@400;500&family=Inter:wght@400;500&display=swap');
+        * { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; }
+        img { -ms-interpolation-mode: bicubic; }
+        body { 
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            font-family: "Libre Baskerville", Arial, sans-serif !important;
+            background-color: #f6f3ec;
+            font-family: 'Encode Sans', Arial, sans-serif !important;
         }
 
         .container {
             width: 100%;
             table-layout: fixed;
-            background-color: #f5f5f5;
+            background-color: #f6f3ec;
             padding: 0;
             margin: 0;
         }
@@ -31,14 +33,12 @@
             max-width: 600px;
             background-color: #ffffff;
             margin: 0 auto;
-            border-radius: 8px;
             overflow: hidden;
-            padding: 0px 20px;
         }
 
         .footer {
-            padding: 24px 20px;
-            background-color: #294e3a;
+            padding: 40px 20px;
+            background-color: #1b3b2b;
         }
 
         a {
@@ -47,40 +47,27 @@
 
         p,
         span,
-        a {
-            font-family: "Sora", Arial, sans-serif;
+        a,
+        h1,
+        h2,
+        h3 {
+            font-family: 'Encode Sans', Arial, sans-serif;
         }
 
-        /* Fluid Typography for Mobile (Maintains Desktop Layout but fits screen) */
+        .serif {
+            font-family: "Libre Baskerville", serif !important;
+        }
+
+        /* Fluid Typography for Mobile */
         @media screen and (max-width: 600px) {
+            .mobile-padding {
+                padding: 20px 15px !important;
+            }
 
-            /* Scale down headings */
             h1 {
-                font-size: 24px !important;
-                line-height: 1.2 !important;
+                font-size: 20px !important;
             }
 
-            h2 {
-                font-size: 18px !important;
-                line-height: 1.2 !important;
-            }
-
-            /* Scale down body text with better legibility */
-            p,
-            span,
-            a,
-            strong {
-                font-size: 14px !important;
-                line-height: 1.5 !important;
-                font-family: "Sora", sans-serif;
-            }
-
-            /* Specific font size for secondary labels in Stats/Footer */
-            .mobile-small {
-                font-size: 12px !important;
-            }
-
-            /* Ensure Button remains a large tap target */
             .mobile-btn {
                 padding: 14px 34px !important;
                 font-size: 16px !important;
@@ -89,367 +76,142 @@
                 box-sizing: border-box !important;
             }
 
-            /* Reduce padding to give columns more space */
-            .contact-info {
-                padding: 15px !important;
-            }
-
-            .header {
-                padding: 15px 10px !important;
-            }
-
             .content {
-                padding: 0 10px !important;
+                width: 100% !important;
             }
 
-            /* Ensure images fit */
-            img {
-                max-width: 100% !important;
-                height: auto !important;
-            }
-
-            /* Specific fix for Account Details to fit side-by-side */
-            td[style*="background: #FFFFFFCC"] {
-                padding: 12px !important;
-            }
-
-            td[style*="padding-left:10px"] {
-                padding-left: 5px !important;
-            }
-
-            td[style*="padding-right:10px"] {
-                padding-right: 5px !important;
+            .box-dashed {
+                padding: 15px !important;
             }
         }
     </style>
     <!--[if mso]>
+    <noscript>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
     <style>
-        body, table, td, h1, h2, h3, p, a, span { font-family: Arial, sans-serif !important; }
+        table, td { mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; }
+        body, .cta-strong { mso-line-height-rule: exactly; }
+        .mso-hide { mso-hide: all !important; }
     </style>
     <![endif]-->
 </head>
 
-<body style="margin: 0; padding: 0; background-color: #f5f5f5; font-family: 'Sora', Arial, sans-serif;">
-    <!-- Hidden Preheader Text (Visible in Inbox Preview) -->
-    <div style="display: none; max-height: 0px; overflow: hidden;">
-        Compassionate, reliable in-home care for your loved ones in Sacramento. Experience peace of mind with Noah's
-        Dove.
+<body style="margin: 0; padding: 0; background-color: #f6f3ec; font-family: 'Sora', Arial, sans-serif;">
+    <!-- Hidden Preheader Text -->
+    <div class="mso-hide" style="font-family: 'Inter', Arial, sans-serif; display: none; max-height: 0px; overflow: hidden; mso-hide: all !important;">
+        Welcome to Noah's Dove. We're here to help your loved ones age in the place they love most—home.
     </div>
-    <center class="container" style="width: 100%; table-layout: fixed; background-color: #f5f5f5;">
-        <!--[if mso]>
-        <table role="presentation" width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="width:600px;">
-        <tr>
-        <td>
-        <![endif]-->
-        <table class="content" cellpadding="0" cellspacing="0"
-            style="max-width: 600px; background-color: #ffffff; margin: 0 auto; border-radius: 8px; overflow: hidden; padding: 8px 20px; width: 100%;">
-            <tr>
-                <td align="center">
-                    <!-- Banner Content -->
-                    <table role="presentation"
-                        style="background-color: #f6f3ec; border-radius: 8px; padding: 12px 20px;" width="100%"
-                        cellpadding="0" cellspacing="0">
-                        <tr>
 
-                            <td class="header">
-                                <img src="https://res.cloudinary.com/dgstbxgwt/image/upload/v1774992817/6705065586db80bb1f27df30_Logo_ND_t7vxkx.png"
-                                    alt="Noah's Dove Official Logo" width="158" height="56">
-                                <h1 style="color: #363132; margin-top: 8px; margin-bottom: 0px; font-weight: 500;">
-                                    Compassionate In-Home Care in
-                                    <strong style="color: #62a958; font-weight: 500;">Sacramento, CA</strong>
+    <center class="container"
+        style="width: 100%; table-layout: fixed; background-color: #f6f3ec; padding-top: 30px; padding-bottom: 10px;">
+        
+        <div style="max-width: 600px; margin: 0 auto; width: 100%; border-radius: 16px; overflow: hidden;" class="email-container">
+            <!--[if mso]>
+            <table role="presentation" width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="width:600px; border-radius: 16px;">
+            <tr>
+            <td style="border-radius: 16px; overflow: hidden;">
+            <![endif]-->
+            <table class="content" cellpadding="0" cellspacing="0"
+                style="max-width: 600px; background-color: #ffffff; margin: 0 auto; width: 100%; border-collapse: collapse;">
+
+                <!-- Header Image + Logo (Combined) -->
+                <tr>
+                    <td align="center" style="line-height: 0; font-size: 0; mso-line-height-rule: exactly;">
+                        <img mc:edit="header_banner"
+                            src="https://res.cloudinary.com/df80crgrw/image/upload/v1779111332/Group_9_rsqk1j.png"
+                            width="600" style="display: block; width: 600px; max-width: 600px; height: auto;"
+                            alt="Noah's Dove Banner" border="0">
+                    </td>
+                </tr>
+
+            <!-- Intro Dashed Box -->
+            <tr>
+                <td class="mobile-padding" style="padding: 32px 40px 20px 40px; background-color: #ffffff;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="box-dashed" style="padding: 20px 0px; text-align: center;">
+                                <h1 mc:edit="intro_title"
+                                    style="font-family: Georgia, serif; margin: 0; font-size: 25px; color: #363132; font-weight: 700; line-height: 1.2; letter-spacing: -0.01em;">
+                                    Welcome To A Partner In Caring.
                                 </h1>
-                                <p style="color: #3d4241; margin-top: 10px;">
-                                    Innovative, compassionate care for seniors at home.</p>
+                                <p mc:edit="user_greeting"
+                                    style="font-family: 'Encode Sans', Arial, sans-serif; margin: 24px 10px 20px; font-size: 16px; color: #8A8686;">
+                                    Hi *|FNAME|*,
+                                </p>
+                                <p mc:edit="intro_body"
+                                    style="font-family: 'Encode Sans', Arial, sans-serif; margin: 0; font-size: 16px; color: #8A8686; line-height: 1.5;">
+                                    We're here to help your loved one age in the place they love the most, home.
+                                </p>
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>
 
+            <!-- What You Can Expect Box -->
             <tr>
-                <td class="main-content">
-                    <h1
-                        style="font-size: 30px; color: #363132; font-weight: 500;  margin-top: 20px; margin-bottom: 0px;">
-                        Hi Noah,
-                    </h1>
-
-                    <p style="color:#3d4241; line-height:1.6; margin-top: 10px;">
-                        Thank you for connecting with us! We understand that choosing the right care for your loved ones
-                        can be a big decision, and we’re here to guide you every step of the way with clarity and
-                        support.
-                    </p>
-
-                    <p style="color:#3d4241; line-height:1.6; margin-top: 10px;">
-                        Our compassionate team offers reliable in-home care tailored to your family’s unique needs. We
-                        ensure your loved ones feel safe, comfortable, and well cared for in the familiar surroundings
-                        they know and love.
-                    </p>
-
-                    <p style="color:#3d4241; line-height:1.6; margin-top: 10px;">
-                        We look forward to supporting you and your family on this journey.
-                    </p>
-
-                </td>
-            </tr>
-
-            <tr>
-                <td style="padding:8px 0px 0px 0px">
-                    <table width="100%" cellpadding="0" cellspacing="0">
+                <td class="mobile-padding" style="padding: 0 40px 30px 40px; background-color: #ffffff;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                        style="background-color: #F9E9EC; border-radius: 12px; padding: 30px 25px;">
                         <tr>
-                            <td style="padding:18px 0px;">
-                                <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                            <td align="center" style="padding-bottom: 25px;">
+                                <h2 mc:edit="expect_title"
+                                    style="font-family: Georgia, serif; margin: 0; font-size: 20px; color: #BF1F3C; font-weight: 700; text-align: center;">
+                                    What you can expect from us
+                                </h2>
+                            </td>
+                        </tr>
+                        <!-- Process List -->
+                        <tr>
+                            <td>
+                                <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                    <!-- Item 1 -->
                                     <tr>
-                                        <!-- LEFT LINE -->
-                                        <td width="30%" valign="middle">
-                                            <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                                                <tr>
-                                                    <td
-                                                        style="height:0.8px; background:#62A958; font-size:0; line-height:0;">
-                                                        &nbsp;</td>
-                                                </tr>
-                                            </table>
+                                        <td width="55" valign="middle" style="padding-bottom: 25px; line-height: 0; font-size: 0;">
+                                            <img src="https://res.cloudinary.com/df80crgrw/image/upload/v1779111346/vecteezy_solidarity-vector-icon-design_21292337_1_1_sni9pl.png"
+                                                width="45" height="45" alt="Plan Icon" style="display: block; width: 45px; height: 45px;" border="0">
                                         </td>
-
-                                        <!-- CENTER TEXT -->
-                                        <td width="40%" align="center" valign="middle">
-                                            <h2
-                                                style="margin:0; font-size:18px; color: #363132; line-height: 100%; letter-spacing: 1%; font-weight: 600;">
-                                                Trusted Results
-                                            </h2>
-                                        </td>
-
-                                        <!-- RIGHT LINE -->
-                                        <td width="30%" valign="middle">
-                                            <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                                                <tr>
-                                                    <td
-                                                        style="height:0.8px; background: #62A958; font-size:0; line-height:0;">
-                                                        &nbsp;</td>
-                                                </tr>
-                                            </table>
+                                        <td valign="top" style="padding-bottom: 25px; padding-left: 10px;">
+                                            <h3 mc:edit="item_1_title"
+                                                style="font-family: Georgia, serif; margin: 0; font-size: 16px; color: #363132; font-weight: 700;">
+                                                Personalized Care Plans</h3>
+                                            <p mc:edit="item_1_desc"
+                                                style="font-family: 'Roboto', Arial, sans-serif; margin: 4px 0 0 0; font-size: 14px; color: #8A8686; line-height: 1.5;">Tailored to
+                                                your specific family needs.</p>
                                         </td>
                                     </tr>
-                                </table>
-                            </td>
-                        </tr>
-
-                    </table>
-
-                </td>
-
-            </tr>
-
-            <td style="padding:0px 0px 0px 0px">
-                <table width="100%" cellpadding="0" cellspacing="0"
-                    style="background:#294e3a; border-radius:12px; border: 1px solid #f6f3ec">
-
-                    <tr>
-                        <td style="padding:20px 20px 20px 20px;">
-                            <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                                <tr>
-                                    <!-- LEFT ICON -->
-                                    <td width="33.33%" valign="middle" style="text-align:center;">
-                                        <img src="https://res.cloudinary.com/dgstbxgwt/image/upload/v1774996122/66e43fa60e6d50e6cf523b10_Smile_txds8a.png"
-                                            alt="Smiling Client Icon" width="44" height="44"
-                                            style="display:block; margin:0 auto 6px auto; border:0;" />
-                                        <h2
-                                            style=" font-family: Sora, sans-serif; color: #FFFFFF; margin-top: 12px; margin-bottom: 0px; font-weight: 500; ">
-                                            750+
-                                        </h2>
-                                        <p class="mobile-small"
-                                            style="color:#D4DCD8; font-weight: 600; line-height: 100%; margin-bottom: 0; letter-spacing: 1%; font-size:14px; margin-top: 8px;">
-                                            Happy Clients
-                                        </p>
-                                    </td>
-
-                                    <td width="33.33%" valign="middle" style="text-align:center;">
-                                        <img src="https://res.cloudinary.com/dgstbxgwt/image/upload/v1774996637/66e445c7089c9b6bf5857d18_Icon_2_odfqy2.png"
-                                            alt="24/7 Access to Care Icon" width="54" height="46"
-                                            style="display:block; margin:0 auto 6px auto; border:0;" />
-                                        <h2
-                                            style=" font-family: Sora, sans-serif; color: #FFFFFF; margin-top: 12px; margin-bottom: 0px; font-weight: 500;">
-                                            24/7
-                                        </h2>
-                                        <p class="mobile-small"
-                                            style="color:#D4DCD8; font-weight: 600; line-height: 100%; margin-bottom: 0; letter-spacing: 1%; font-size:14px; margin-top: 8px;">
-                                            Access to Care
-                                        </p>
-                                    </td>
-                                    <td width="33.33%" valign="middle" style="text-align:center;">
-                                        <img src="https://res.cloudinary.com/dgstbxgwt/image/upload/v1774996601/66e4461e0a12c89b518dcd1a_Icon_3_i8lnoc.png"
-                                            alt="Professional Caregiver Staff Icon" width="44" height="44"
-                                            style="display:block; margin:0 auto 6px auto; border:0;" />
-                                        <h2
-                                            style=" font-family: Sora, sans-serif; color: #FFFFFF; margin-top: 12px; margin-bottom: 0px; font-weight: 500;">
-                                            100+
-                                        </h2>
-                                        <p class="mobile-small"
-                                            style="color:#D4DCD8; font-weight: 600; line-height: 100%; margin-bottom: 0; letter-spacing: 1%; font-size:14px; margin-top: 8px;">
-                                            Professional Staff
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-
-                </table>
-            </td>
-            </tr>
-
-            <tr>
-                <td class="main-content" style="padding:20px 0px 20px 0px;">
-                    <table width="100%" cellpadding="0" cellspacing="0"
-                        style="background-color: #f6f3ec; border-radius: 8px; padding: 12px 20px;">
-                        <tr>
-                            <td align="center" style="padding: 14px 12px;">
-                                <h1
-                                    style="color: #363132; margin-top: 0px; margin-bottom: 0px; font-weight: 500; font-size: 24px; line-height: 100%; letter-spacing: 1%;">
-                                    Book a Meeting with Us</h1>
-
-                                <img src="https://res.cloudinary.com/dgstbxgwt/image/upload/v1774998195/66e44c7a7229d084b3a42347_Icon_5_ecwdie.png"
-                                    alt="Handshake" width="66" height="66"
-                                    style="display:block; margin:14px auto 0px auto; border:0;" />
-
-                                <p
-                                    style="margin:14px 0 20px; font-size:14px; color: #3d4241; margin-top: 10px; font-weight: 400;  line-height:1.4; letter-spacing: 1%;">
-                                    Your needs matter to us. Schedule a meeting at your convenience, and our team will
-                                    provide personalized guidance and support every step of the way.
-                                </p>
-
-                                <a href="https://www.noahsdove.com/contact-us" style="text-decoration:none;">
-                                    <strong class="mobile-btn"
-                                        style="background:#efef30; color:#335347; padding:12px 28px; border-radius:8px; line-height: 100%; font-size:14px; font-weight:500; display:inline-block;">
-                                        Talk Today
-                                    </strong>
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-
-            <tr>
-                <td class="footer" style="border-radius: 8px;">
-                    <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                        <tr>
-                            <!-- LEFT: TEXT -->
-                            <td width="60%" valign="middle"
-                                style="padding-right:0px; border-right: 1px solid #FFFFFF4D; padding-right: 24px;">
-                                <h2
-                                    style="margin:0 0 14px; font-size: 18px; color:#FFFFFF; font-weight: 600; line-height: 100%; letter-spacing: 1%;">
-                                    Get in Touch</h2>
-
-                                <!-- Time -->
-                                <p
-                                    style="margin:0 0 8px; font-size:14px; color:#FFFFFFCC; line-height:20px; letter-spacing: 1%; font-weight: 400;">
-                                    Available 24/7
-                                </p>
-
-                                <!-- Email -->
-                                <a href="mailto:info@noahsdove.com">
-                                    <p
-                                        style="margin:0 0 8px; font-size:14px; color:#FFFFFFCC; line-height:20px; letter-spacing: 1%; font-weight: 400;">
-                                        info@noahsdove.com
-                                    </p>
-                                </a>
-
-
-                                <!-- Address -->
-                                <p style="margin:0; font-size:14px; color:#FFFFFFCC; line-height:20px;">
-                                    Noah's Dove <br>
-                                    3050 Beacon Blvd, Suite 200, West Sacramento, CA 95691
-                                </p>
-                            </td>
-
-                            <!-- RIGHT: IMAGE -->
-                            <td width="40%" valign="middle" align="" style="padding-left: 20px;">
-
-                                <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
-                                    <tbody>
-                                        <tr>
-                                            <td align="center"
-                                                style="padding-right: 6px; text-align: center; padding-top: 0;">
-                                                <table role="presentation" border="0" cellpadding="0" cellspacing="0"
-                                                    width="20">
-                                                    <tr>
-                                                        <td align="center" valign="middle" width="20" height="20"
-                                                            bgcolor="#29A0C6"
-                                                            style="width: 20px; height: 20px; background-color: #62a958; border-radius: 50%;">
-                                                            <a href="https://www.instagram.com/noahsdovellc/"
-                                                                target="_blank" rel="nofollow noreferrer"
-                                                                style="text-decoration: none; display: block; line-height: 1;">
-                                                                <img width="10" height="10"
-                                                                    src="https://res.cloudinary.com/dgstbxgwt/image/upload/v1769116996/Group_rjxeli.png"
-                                                                    style="border:none; display: block;" border="0"
-                                                                    alt="Noah's Dove on Instagram">
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                            <td align="center"
-                                                style="padding-right: 6px; text-align: center; padding-top: 0;">
-                                                <table role="presentation" border="0" cellpadding="0" cellspacing="0"
-                                                    width="20">
-                                                    <tr>
-                                                        <td align="center" valign="middle" width="20" height="20"
-                                                            bgcolor="#29A0C6"
-                                                            style="width: 20px; height: 20px; background-color: #62a958; border-radius: 50%;">
-                                                            <a href="https://www.facebook.com/people/Noahs-Dove/61572991335893/"
-                                                                target="_blank" rel="nofollow noreferrer"
-                                                                style="text-decoration: none; display: block; line-height: 1;">
-                                                                <img width="5" height="11"
-                                                                    src="https://res.cloudinary.com/dgstbxgwt/image/upload/v1769117379/Vector_dywumi.png"
-                                                                    style="border:none; display: block;" border="0"
-                                                                    alt="Noah's Dove on Facebook">
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-
-
-                                            <td align="center"
-                                                style="padding-right: 6px; text-align: center; padding-top: 0;">
-                                                <table role="presentation" border="0" cellpadding="0" cellspacing="0"
-                                                    width="20">
-                                                    <tr>
-                                                        <td align="center" valign="middle" width="20" height="20"
-                                                            bgcolor="#29A0C6"
-                                                            style="width: 20px; height: 20px; background-color: #62a958; border-radius: 50%;">
-                                                            <a href="https://www.linkedin.com/company/noah-s-dove/"
-                                                                target="_blank" rel="nofollow noreferrer"
-                                                                style="text-decoration: none; display: block; line-height: 1;">
-                                                                <img width="10" height="10"
-                                                                    src="https://res.cloudinary.com/dgstbxgwt/image/upload/v1769117110/Group_47242_ykfhpl.png"
-                                                                    style="border:none; display: block;" border="0"
-                                                                    alt="Noah's Dove on LinkedIn">
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"
-                                    style="margin: 8px auto 8px auto;">
+                                    <!-- Item 2 -->
                                     <tr>
-                                        <td align="center" style="padding: 0;">
-                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0"
-                                                width="100%"
-                                                style="background-color: #FFFFFF; border: 1px solid #EEF9FA; padding: 2px 0px ; border-radius: 8px;">
-                                                <tr>
-                                                    <td align="center" valign="middle" style=" padding: 0;">
-                                                        <img src="https://res.cloudinary.com/dgstbxgwt/image/upload/v1774992817/6705065586db80bb1f27df30_Logo_ND_t7vxkx.png"
-                                                            alt="StartHub Logo" width="156" height="55"
-                                                            style="display: block; border: 0;" />
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                        <td width="55" valign="middle" style="padding-bottom: 25px; line-height: 0; font-size: 0;">
+                                            <img src="https://res.cloudinary.com/df80crgrw/image/upload/v1779111353/vecteezy_solidarity-vector-icon-design_21292337_1_1_1_rfpkba.png"
+                                                width="45" height="45" alt="Caregiver Icon" style="display: block; width: 45px; height: 45px;" border="0">
+                                        </td>
+                                        <td valign="top" style="padding-bottom: 25px; padding-left: 10px;">
+                                            <h3 mc:edit="item_2_title"
+                                                style="font-family: Georgia, serif; margin: 0; font-size: 16px; color: #363132; font-weight: 700;">
+                                                Highly Trained Caregivers</h3>
+                                            <p mc:edit="item_2_desc"
+                                                style="font-family: 'Roboto', Arial, sans-serif; margin: 4px 0 0 0; font-size: 14px; color: #8A8686; line-height: 1.5;">Expert-led, locally owned and dedicated to Northern California families.</p>
+                                        </td>
+                                    </tr>
+                                    <!-- Item 3 -->
+                                    <tr>
+                                        <td width="55" valign="middle" style="line-height: 0; font-size: 0;">
+                                            <img src="https://res.cloudinary.com/df80crgrw/image/upload/v1779111360/vecteezy_solidarity-vector-icon-design_21292337_1_1_2_e9su76.png"
+                                                width="45" height="45" alt="Peace Icon" style="display: block; width: 45px; height: 45px;" border="0">
+                                        </td>
+                                        <td valign="top" style="padding-left: 10px;">
+                                            <h3 mc:edit="item_3_title"
+                                                style="font-family: Georgia, serif; margin: 0; font-size: 16px; color: #363132; font-weight: 700;">
+                                                Peace of Mind</h3>
+                                            <p mc:edit="item_3_desc"
+                                                style="font-family: 'Roboto', Arial, sans-serif; margin: 4px 0 0 0; font-size: 14px; color: #8A8686; line-height: 1.5;">Real-time
+                                                updates and family communication.</p>
                                         </td>
                                     </tr>
                                 </table>
@@ -459,25 +221,104 @@
                 </td>
             </tr>
 
+            <!-- Coordination Note -->
             <tr>
-                <td align="center" style="padding: 14px 0px 8px 0px; color:#FFFFFFCC; font-size:12px;">
-                    <p
-                        style=" margin:0; font-size:12px; color: #0C0417; line-height:20px; letter-spacing: 1%; font-weight: 400;">
-                        <b>© 2026 Noah's Dove LLC.</b> All Copyrights Reserved.
-                    </p>
-                    <p style="margin: 6px 0 0 0;">
-                        <a href="#" style="color: #62a958; text-decoration: underline; font-size: 11px;">Unsubscribe
-                            from these emails</a>
+                <td class="mobile-padding" style="padding: 10px 30px 34px 30px; text-align: center; background-color: #ffffff;">
+                    <p mc:edit="coordination_note"
+                        style="font-family: 'Encode Sans', Arial, sans-serif; margin: 0; font-size: 15px; font-weight: 500; color: #8A8686; line-height: 1.5;">
+                        A care coordinator will reach out shortly to answer your questions.
                     </p>
                 </td>
             </tr>
 
+            <!-- Button Section -->
+            <tr>
+                <td align="center" class="mobile-padding" style="padding: 0 40px 50px 40px; background-color: #ffffff;">
+                    <a href="https://www.noahsdove.com/contact-us"
+                        style="font-family: 'Inter', Arial, sans-serif; text-decoration: none; display: inline-block;">
+                        <!--[if mso]>
+                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.noahsdove.com/contact-us" style="height:56px;v-text-anchor:middle;width:260px;" arcsize="50%" stroke="f" fillcolor="#75A541">
+                            <w:anchorlock/>
+                            <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:700;">Talk to Our Team Today</center>
+                        </v:roundrect>
+                        <![endif]-->
+                        <strong class="mobile-btn"
+                            style="font-family: 'Inter', Arial, sans-serif; background-color: #BF1F3C; color: #FFFFFF; padding: 18px 45px; border-radius: 50px; font-size: 16px; font-weight: 700; display: inline-block; white-space: nowrap;">
+                            Talk to Our Team Today
+                        </strong>
+                    </a>
+                </td>
+            </tr>
+
+            <!-- Footer Section -->
+            <tr>
+                <td class="footer"
+                    style="background-color: #BF1F3C; padding: 32px 32px; text-align: center; border-radius: 0px 0px 16px 16px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td align="center">
+                                <p style="font-family: 'Inter', Arial, sans-serif; margin: 0; font-size: 16px; font-weight: 400; color: #F9E9EC;">A Partner In Caring
+                                </p>
+                                <p style="font-family: 'Inter', Arial, sans-serif; margin: 12px 0; color:#F9E9EC; font-size: 14px; line-height: 1.6;">
+                                     68 Coombs St. A-9, Napa, California, 94559 
+                                </p>
+                                <p style="font-family: 'Inter', Arial, sans-serif; margin: 0 0 12px 0; font-size: 14px; color: #F9E9EC;">
+                                    Tel: <a href="tel:-(707) 252-7569"
+                                        style="font-family: 'Inter', Arial, sans-serif; color: #F9E9EC !important; text-decoration: none !important;"><span
+                                            style="font-family: 'Inter', Arial, sans-serif; color: #F9E9EC;">(707) 252-7569</span></a> | Email: <a
+                                        href="mailto:wecare@noahsdove.com"
+                                        style="font-family: 'Inter', Arial, sans-serif; color: #F9E9EC !important; text-decoration: none !important;"><span
+                                            style="font-family: 'Inter', Arial, sans-serif; color: #F9E9EC;">wecare@noahsdove.com</span></a>
+                                </p>
+                                <p style="font-family: 'Inter', Arial, sans-serif; margin: 0 0 12px 0; font-size: 14px; color:#C8C3C3;">
+                                    HCO License 574700019
+                                </p>
+
+                                <p style="margin:0;font-size:14px;line-height:20px;font-family:Arial,sans-serif;">
+
+                                <a href="#"
+                                   target="_blank"
+                                   style="
+                                      color:#F9E9EC !important;
+                                      text-decoration:none !important;
+                                      font-family:Arial,sans-serif;
+                                   ">
+
+                                <span style="
+                                    color:#F9E9EC !important;
+                                    border-bottom:1px solid #F9E9EC;
+                                    display:inline-block;
+                                    line-height:18px;
+                                ">
+                                Unsubscribe from A Partner In Caring emails
+                                </span>
+
+                                </a>
+
+                                </p>
+                            </td>
+                        </tr> 
+                    </table>
+                </td>
+            </tr>
         </table>
         <!--[if mso]>
         </td>
         </tr>
         </table>
         <![endif]-->
+        </div>
+
+        <!-- Copy Right Section -->
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px;">
+            <tr>
+                <td align="center" style="padding: 15px 0px; font-family: 'Inter', Arial, sans-serif;">
+                    <p style="font-family: 'Inter', Arial, sans-serif; margin: 0; font-size: 11px; color: #1b3b2b; font-weight: 400; opacity: 0.7;">
+                        &copy; Copyright © 2026 A Partner in Caring
+                    </p>
+                </td>
+            </tr>
+        </table>
     </center>
 </body>
 
