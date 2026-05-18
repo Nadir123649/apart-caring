@@ -21,7 +21,7 @@ A professional collection of 6 high-end, responsive email templates custom-desig
 
 | Template | Campaign Goal | Key Features |
 | :--- | :--- | :--- |
-| 📧 `welcome-template.html` | **Welcome / Intro** | "What you can expect" process list & initial support CTA |
+| 📧 `index.html` | **Welcome / Intro** | "What you can expect" process list & initial support CTA |
 | 🏥 `different-care.html` | **Our Difference** | Montessori-inspired engagement focus & specialized memory care highlights |
 | 📋 `time-for-care.html` | **Signs for Care** | "5 Signs" checklist with high-readability item boxes & numbered indicators |
 | 🛡️ `caregiving-hard.html` | **Caregiver Support** | Featured callout for caregiver stress & specialized meal planning services |
